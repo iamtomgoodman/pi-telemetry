@@ -890,7 +890,7 @@ function otelAttributeValue(value) {
         return { boolValue: value };
     }
     if (typeof value === 'number') {
-        return Number.isInteger(value) ? { intValue: String(value) } : { doubleValue: value };
+        return Number.isInteger(value) ? { intValue: String(value) } : { stringValue: String(value) };
     }
     if (typeof value === 'string') {
         return { stringValue: value };
